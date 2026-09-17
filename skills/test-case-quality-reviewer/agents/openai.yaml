@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Case Quality Reviewer"
+  short_description: "Find coverage and quality problems in test cases"
+  default_prompt: "Use $test-case-quality-reviewer to review these test cases and recommend the most valuable improvements."
