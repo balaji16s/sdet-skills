@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Test Data Designer"
+  short_description: "Design useful and repeatable test datasets"
+  default_prompt: "Use $sdet-test-data-designer to design test data and setup/reset guidance for these test conditions."

@@ -1,0 +1,5 @@
+interface:
+  display_name: "SDET Traceability and Coverage Manager"
+  short_description: "Connect requirements, tests, results, and gaps"
+  default_prompt: "Use $sdet-traceability-coverage-manager to analyze these requirements, tests, results, and defects for coverage and traceability gaps."
+

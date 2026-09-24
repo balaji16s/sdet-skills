@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Test Completion Evaluator"
+  short_description: "Assess test completion against agreed criteria"
+  default_prompt: "Use $sdet-test-completion-evaluator to assess these results against the agreed test exit criteria and identify unfinished work."

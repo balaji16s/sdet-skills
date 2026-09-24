@@ -1,5 +1,0 @@
-interface:
-  display_name: "Test Technique Designer"
-  short_description: "Derive effective tests with suitable techniques"
-  default_prompt: "Use $test-technique-designer to select and apply suitable test techniques to this test basis."
-

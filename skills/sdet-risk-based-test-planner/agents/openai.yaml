@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Risk-Based Test Planner"
+  short_description: "Focus testing on the most important risks"
+  default_prompt: "Use $sdet-risk-based-test-planner to identify and prioritize the product and project risks for this change, then recommend a proportionate test focus."

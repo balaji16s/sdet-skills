@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Test Execution Analyst"
+  short_description: "Explain failures using test execution evidence"
+  default_prompt: "Use $sdet-test-execution-analyst to analyze these test results and identify the evidence needed to determine their cause."

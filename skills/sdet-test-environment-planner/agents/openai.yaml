@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Test Environment Planner"
+  short_description: "Plan test environments and readiness checks"
+  default_prompt: "Use $sdet-test-environment-planner to define the environment requirements and readiness checks for this testing scope."
