@@ -16,18 +16,24 @@ This repository is useful for:
 
 ## Available Skills
 
-The repository currently contains eight MVP skills.
+The collection includes the original eight MVP skills and six skills for test preparation, execution analysis, estimation, completion, and improvement.
 
 | Skill | What it does | Example use case |
 |---|---|---|
-| [`requirement-testability-review`](skills/requirement-testability-review/) | Finds unclear, incomplete, conflicting, or untestable requirements before detailed test design begins. | Review a user story and identify missing rules, vague acceptance criteria, and questions for the product owner. |
-| [`risk-based-test-planner`](skills/risk-based-test-planner/) | Identifies the most likely and harmful risks so testing focuses on what matters most. | Prioritize payment failures and data-loss risks above low-impact visual issues for a release. |
-| [`test-strategy-designer`](skills/test-strategy-designer/) | Creates a practical testing approach covering objectives, scope, risks, test types, environments, people, automation, and reporting. | Define how a team will test a new checkout service across component, API, integration, system, and acceptance levels. |
-| [`test-technique-designer`](skills/test-technique-designer/) | Selects and applies suitable test techniques to derive effective and traceable tests. | Use equivalence partitions and boundary values to test an age field, or a decision table to test discount rules. |
-| [`test-case-quality-reviewer`](skills/test-case-quality-reviewer/) | Reviews existing test cases for correctness, clarity, coverage, reliability, traceability, and maintainability. | Find weak expected results, duplicate cases, hidden dependencies, and missing negative coverage in a regression suite. |
-| [`traceability-coverage-manager`](skills/traceability-coverage-manager/) | Connects requirements, risks, tests, results, and defects to reveal meaningful coverage and gaps. | Build a traceability view showing which high-risk requirements have passed tests, failed tests, or no coverage. |
-| [`defect-reporting-triage`](skills/defect-reporting-triage/) | Turns failure evidence into clear, reproducible defect reports and supports consistent triage. | Convert logs, screenshots, and failed steps into a defect report with expected behavior, actual behavior, impact, and proposed severity. |
-| [`test-status-reporter`](skills/test-status-reporter/) | Converts test results, coverage, defects, risks, and blockers into decision-ready status or completion reports. | Prepare a release testing update that explains progress, major failures, remaining risks, blockers, and confidence. |
+| [`sdet-requirement-testability-review`](skills/sdet-requirement-testability-review/) | Finds unclear, incomplete, conflicting, or untestable requirements before detailed test design begins. | Review a user story and identify missing rules, vague acceptance criteria, and questions for the product owner. |
+| [`sdet-risk-based-test-planner`](skills/sdet-risk-based-test-planner/) | Identifies the most likely and harmful risks so testing focuses on what matters most. | Prioritize payment failures and data-loss risks above low-impact visual issues for a release. |
+| [`sdet-test-strategy-designer`](skills/sdet-test-strategy-designer/) | Creates a practical testing approach covering objectives, scope, risks, test types, environments, people, automation, and reporting. | Define how a team will test a new checkout service across component, API, integration, system, and acceptance levels. |
+| [`sdet-test-technique-designer`](skills/sdet-test-technique-designer/) | Selects and applies suitable test techniques to derive effective and traceable tests. | Use equivalence partitions and boundary values to test an age field, or a decision table to test discount rules. |
+| [`sdet-test-case-quality-reviewer`](skills/sdet-test-case-quality-reviewer/) | Reviews existing test cases for correctness, clarity, coverage, reliability, traceability, and maintainability. | Find weak expected results, duplicate cases, hidden dependencies, and missing negative coverage in a regression suite. |
+| [`sdet-traceability-coverage-manager`](skills/sdet-traceability-coverage-manager/) | Connects requirements, risks, tests, results, and defects to reveal meaningful coverage and gaps. | Build a traceability view showing which high-risk requirements have passed tests, failed tests, or no coverage. |
+| [`sdet-defect-reporting-triage`](skills/sdet-defect-reporting-triage/) | Turns failure evidence into clear, reproducible defect reports and supports consistent triage. | Convert logs, screenshots, and failed steps into a defect report with expected behavior, actual behavior, impact, and proposed severity. |
+| [`sdet-test-status-reporter`](skills/sdet-test-status-reporter/) | Converts test results, coverage, defects, risks, and blockers into decision-ready status or completion reports. | Prepare a release testing update that explains progress, major failures, remaining risks, blockers, and confidence. |
+| [`sdet-test-data-designer`](skills/sdet-test-data-designer/) | Designs realistic, repeatable test data for normal, boundary, and invalid conditions. | Prepare linked customer and order fixtures with valid quantities and values just outside the allowed range. |
+| [`sdet-test-environment-planner`](skills/sdet-test-environment-planner/) | Defines the systems, configurations, dependencies, and checks needed for a ready test environment. | Plan a checkout environment with a payment simulator and identify checks that still need the real provider. |
+| [`sdet-test-execution-analyst`](skills/sdet-test-execution-analyst/) | Uses execution evidence to explain failed, intermittent, or suspiciously passing tests. | Investigate whether a CI failure comes from the application, setup, test code, or shared data. |
+| [`sdet-test-estimation-planner`](skills/sdet-test-estimation-planner/) | Estimates testing effort and duration with explicit assumptions and uncertainty. | Forecast a regression cycle including preparation, investigation, retesting, and environment waits. |
+| [`sdet-test-completion-evaluator`](skills/sdet-test-completion-evaluator/) | Checks agreed exit criteria against evidence and identifies remaining risks and handover work. | Assess whether blocked payment-recovery tests prevent a release's testing milestone from being complete. |
+| [`sdet-test-process-improver`](skills/sdet-test-process-improver/) | Turns recurring testing problems and lessons into small, measurable improvement experiments. | Pilot decision-table reviews to reduce escaped defects in discount-rule combinations. |
 
 ## How the Skills Fit Together
 
@@ -38,26 +44,31 @@ Requirements
 Testability review
     |
     v
-Risk analysis and test strategy
+Risk analysis, test strategy, and estimation
     |
     v
-Test design and test-case review
+Test design, data, environments, and test-case review
     |
     v
-Traceability, execution evidence, and defects
+Traceability, execution analysis, and defects
     |
     v
-Test status and completion reporting
+Completion assessment and reporting
+    |
+    v
+Lessons and process improvement
 ```
 
-The skills are independent. Install only the skill you need, or combine them across a testing workflow.
+This is an example flow, not a required sequence. Planning, reviews, traceability, and reporting can happen throughout delivery, and findings can lead back to earlier work.
+
+The skills are independent. Install only the skill you need, or combine them across a testing workflow. The strategy skill covers the overall approach; data, environment, and estimation skills provide focused detail when needed. Execution analysis explains results, defect reporting documents issues, completion evaluation assesses exit criteria, and status reporting communicates the evidence.
 
 ## Skill Structure
 
 Each skill is self-contained:
 
 ```text
-skill-name/
+sdet-skill-name/
 |-- SKILL.md                  Main agent instructions
 |-- agents/
 |   `-- openai.yaml           User-facing skill metadata
@@ -126,6 +137,8 @@ Copy the required folder from [`skills/`](skills/) into the skills directory use
 ## Contributing
 
 Contributions from testers, developers, quality engineers, and test leaders are welcome. Open an issue or pull request when you find unclear guidance, missing scenarios, or behavior that does not work well in practice.
+
+Prefix every skill's folder and frontmatter name with `sdet-` (for example, `sdet-test-data-designer`). Use `SDET` at the start of its display name and keep invocation prompts consistent with the full skill name.
 
 When adding a skill, update the **Available Skills** table in this README so the public catalog remains current.
 

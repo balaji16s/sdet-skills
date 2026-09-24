@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Test Estimation Planner"
+  short_description: "Estimate testing effort with clear assumptions"
+  default_prompt: "Use $sdet-test-estimation-planner to estimate testing effort and duration for this scope, showing assumptions and uncertainty."

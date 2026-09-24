@@ -1,5 +1,0 @@
-interface:
-  display_name: "Traceability and Coverage Manager"
-  short_description: "Connect requirements, tests, results, and gaps"
-  default_prompt: "Use $traceability-coverage-manager to analyze these requirements, tests, results, and defects for coverage and traceability gaps."
-

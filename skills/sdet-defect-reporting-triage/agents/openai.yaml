@@ -1,0 +1,5 @@
+interface:
+  display_name: "SDET Defect Reporting and Triage"
+  short_description: "Create clear and reproducible defect reports"
+  default_prompt: "Use $sdet-defect-reporting-triage to turn this failure evidence into a clear defect report and triage assessment."
+

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Requirement Testability Review"
+  short_description: "Find unclear or untestable requirements early"
+  default_prompt: "Use $sdet-requirement-testability-review to review these requirements and list the most important questions, risks, and candidate test conditions."

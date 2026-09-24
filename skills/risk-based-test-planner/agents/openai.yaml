@@ -1,4 +1,0 @@
-interface:
-  display_name: "Risk-Based Test Planner"
-  short_description: "Focus testing on the most important risks"
-  default_prompt: "Use $risk-based-test-planner to identify and prioritize the product and project risks for this change, then recommend a proportionate test focus."

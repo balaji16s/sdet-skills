@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Test Status Reporter"
+  short_description: "Turn testing evidence into decision-ready updates"
+  default_prompt: "Use $sdet-test-status-reporter to create a clear test status report from these plans, results, defects, risks, and blockers."

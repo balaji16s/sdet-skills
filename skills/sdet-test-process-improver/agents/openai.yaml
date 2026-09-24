@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Test Process Improver"
+  short_description: "Turn testing lessons into measurable improvements"
+  default_prompt: "Use $sdet-test-process-improver to analyze this testing evidence and propose a small, measurable improvement plan."

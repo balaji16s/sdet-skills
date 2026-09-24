@@ -1,0 +1,5 @@
+interface:
+  display_name: "SDET Test Strategy Designer"
+  short_description: "Design a focused testing approach for a project"
+  default_prompt: "Use $sdet-test-strategy-designer to create a risk-aware test strategy for this product or change."
+
