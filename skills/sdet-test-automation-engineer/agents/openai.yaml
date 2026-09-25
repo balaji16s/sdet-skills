@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Test Automation Engineer"
+  short_description: "Build reliable tests in the project's existing stack"
+  default_prompt: "Use $sdet-test-automation-engineer to implement automated tests for this behavior using the project's existing framework."
