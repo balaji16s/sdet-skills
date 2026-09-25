@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET CI/CD Test Integrator"
+  short_description: "Integrate tests into reliable CI/CD workflows"
+  default_prompt: "Use $sdet-ci-cd-test-integrator to integrate these tests into the existing pipeline with clear results and gate behavior."

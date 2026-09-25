@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Automation Framework Reviewer"
+  short_description: "Review shared automation code and architecture"
+  default_prompt: "Use $sdet-automation-framework-reviewer to review this automation framework for reliability, result correctness, and maintainability."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Automation Feasibility Assessor"
+  short_description: "Decide what to automate and how to pilot it"
+  default_prompt: "Use $sdet-automation-feasibility-assessor to assess these automation candidates and propose a focused pilot."

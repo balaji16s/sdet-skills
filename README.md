@@ -2,7 +2,7 @@
 
 Reusable AI agent skills for quality engineers, QA engineers, SDETs, developers, and test leaders.
 
-These skills help AI coding agents perform testing work with the structure and judgment of an experienced tester. The current collection covers core activities of the Software Testing Life Cycle (STLC), from reviewing requirements to reporting test status.
+These skills help AI coding agents perform testing work with the structure and judgment of an experienced tester. The collection covers core activities of the Software Testing Life Cycle (STLC), from reviewing requirements to reporting test status, plus practical test automation engineering.
 
 ## Who This Is For
 
@@ -16,7 +16,7 @@ This repository is useful for:
 
 ## Available Skills
 
-The collection includes the original eight MVP skills and six skills for test preparation, execution analysis, estimation, completion, and improvement.
+The collection covers core STLC work and test automation. Each skill has a focused purpose and can be installed independently.
 
 | Skill | What it does | Example use case |
 |---|---|---|
@@ -34,6 +34,10 @@ The collection includes the original eight MVP skills and six skills for test pr
 | [`sdet-test-estimation-planner`](skills/sdet-test-estimation-planner/) | Estimates testing effort and duration with explicit assumptions and uncertainty. | Forecast a regression cycle including preparation, investigation, retesting, and environment waits. |
 | [`sdet-test-completion-evaluator`](skills/sdet-test-completion-evaluator/) | Checks agreed exit criteria against evidence and identifies remaining risks and handover work. | Assess whether blocked payment-recovery tests prevent a release's testing milestone from being complete. |
 | [`sdet-test-process-improver`](skills/sdet-test-process-improver/) | Turns recurring testing problems and lessons into small, measurable improvement experiments. | Pilot decision-table reviews to reduce escaped defects in discount-rule combinations. |
+| [`sdet-automation-feasibility-assessor`](skills/sdet-automation-feasibility-assessor/) | Assesses what is worth automating, what needs preparation, and how to evaluate tools with a small pilot. | Compare repeatable invoice checks with tasks that still require human judgment before investing in automation. |
+| [`sdet-test-automation-engineer`](skills/sdet-test-automation-engineer/) | Builds and maintains automated tests using the project's existing framework, with meaningful assertions and reliable setup and cleanup. | Add API and UI checkout tests that verify order outcomes and isolate test data. |
+| [`sdet-automation-framework-reviewer`](skills/sdet-automation-framework-reviewer/) | Reviews shared automation code and architecture for reliability, trustworthy results, and maintainability. | Find a shared assertion helper that hides failures or a fixture that mixes data between parallel tests. |
+| [`sdet-ci-cd-test-integrator`](skills/sdet-ci-cd-test-integrator/) | Integrates test suites into CI/CD with suitable triggers, preserved failure evidence, and clear gate behavior. | Add required regression checks that retain reports without turning failed tests into a successful job. |
 
 ## How the Skills Fit Together
 
@@ -50,6 +54,9 @@ Risk analysis, test strategy, and estimation
 Test design, data, environments, and test-case review
     |
     v
+Automation feasibility, implementation, framework review, and CI/CD
+    |
+    v
 Traceability, execution analysis, and defects
     |
     v
@@ -62,6 +69,8 @@ Lessons and process improvement
 This is an example flow, not a required sequence. Planning, reviews, traceability, and reporting can happen throughout delivery, and findings can lead back to earlier work.
 
 The skills are independent. Install only the skill you need, or combine them across a testing workflow. The strategy skill covers the overall approach; data, environment, and estimation skills provide focused detail when needed. Execution analysis explains results, defect reporting documents issues, completion evaluation assesses exit criteria, and status reporting communicates the evidence.
+
+For automation work, use feasibility assessment to decide what to automate, automation engineering to implement it, framework review to assess shared infrastructure, and CI/CD integration to run it in delivery workflows. The existing execution analyst investigates run failures; the test-case reviewer evaluates individual cases and their coverage. Tool evaluation and architecture are included in the automation skills rather than requiring separate packages.
 
 ## Skill Structure
 
