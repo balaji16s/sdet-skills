@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Technical Review Facilitator"
+  short_description: "Organize evidence-based design and code reviews"
+  default_prompt: "Use $sdet-technical-review-facilitator to help reviewers find important technical risks and turn them into clear follow-up actions."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Security Test Planner"
+  short_description: "Plan authorized checks around security risks"
+  default_prompt: "Use $sdet-security-test-planner to plan how to check important security controls safely and within an agreed scope."

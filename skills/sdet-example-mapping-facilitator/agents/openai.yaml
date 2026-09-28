@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Example Mapping Facilitator"
+  short_description: "Clarify business rules through concrete examples"
+  default_prompt: "Use $sdet-example-mapping-facilitator to help people discover what a story really means by discussing specific situations."

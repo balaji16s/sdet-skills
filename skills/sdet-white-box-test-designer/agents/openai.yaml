@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET White Box Test Designer"
+  short_description: "Design tests for specific code coverage goals"
+  default_prompt: "Use $sdet-white-box-test-designer to design inputs that exercise specific parts of code and explain exactly what they cover."

@@ -1,6 +1,6 @@
 ---
 name: sdet-test-status-reporter
-description: Turn test plans, execution results, coverage, defects, risks, blockers, and forecasts into an audience-specific test status or completion report. Use when a user needs a testing update, quality summary, release-readiness evidence, or test completion report. Do not use to fabricate metrics or make the final release decision for stakeholders.
+description: Write audience-specific progress or completion reports from testing evidence. Use when the deliverable is a testing update or summary; prefer test-completion-evaluator when the main question is whether exit criteria are met. Do not invent metrics or release approval.
 ---
 
 # SDET Test Status Reporter

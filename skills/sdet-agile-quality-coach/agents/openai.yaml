@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Agile Quality Coach"
+  short_description: "Improve everyday quality practices in Agile teams"
+  default_prompt: "Use $sdet-agile-quality-coach to help a team find and prevent problems throughout an iteration, instead of leaving testing until the end."

@@ -106,11 +106,13 @@ Separate:
 
 ## Standards Basis
 
-This guide paraphrases testing ideas from these ISTQB syllabi:
+This guide uses the following ISTQB syllabus sections. Page numbers refer to the printed syllabus pages, not a viewer's page offset.
 
-- Certified Tester Foundation Level Syllabus v4.0.1: early testing, static testing, test analysis, testability, traceability, risk, and collaboration-based approaches.
-- Certified Tester Advanced Level Test Analyst Syllabus v4.0: test analysis, work-product quality, test conditions, test oracles, test data, product risk, and defect prevention.
-- Certified Tester Advanced Level Agile Tester Syllabus v2.0: shift-left review, understandable and testable stories, acceptance criteria, example mapping, biases, and story slicing.
+- Certified Tester Foundation Level v4.0.1, sections 3.1-3.1.2, page 33: static review, testability, and early feedback.
+- Certified Tester Advanced Level Test Analyst v4.0, section 1.2.1, page 15, and sections 1.3.4-1.3.5, pages 19-21: test-basis analysis, conditions, expected-result sources, and data needs.
+- Certified Tester Advanced Level Agile Tester v2.0, sections 4.1.1-4.1.5, pages 32-35: shared examples, biases, and testable story slices.
 
-ISTQB owns the referenced syllabi and trademarks. This guide is an independent, plain-language interpretation and does not imply ISTQB endorsement or accreditation.
+Examples, priority labels, output tables, and agent safety/authorization rules are original repository guidance, not mandatory ISTQB templates. These references support the testing concepts; they do not certify the skill or establish compliance with every standard cited by a syllabus.
+
+ISTQB owns the referenced syllabi and trademarks. This independent, plain-language interpretation does not imply ISTQB endorsement or accreditation.
 

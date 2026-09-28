@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Static Analysis Reviewer"
+  short_description: "Assess code warnings without assuming they are bugs"
+  default_prompt: "Use $sdet-static-analysis-reviewer to explain which code warnings matter, why they may be real, and how to verify them."

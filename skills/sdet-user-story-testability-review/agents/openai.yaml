@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET User Story Testability Review"
+  short_description: "Make user stories and acceptance criteria testable"
+  default_prompt: "Use $sdet-user-story-testability-review to make each story small and clear enough that the team knows what to build and how to check it."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Exploratory Session Analyzer"
+  short_description: "Turn exploratory notes into evidence and next steps"
+  default_prompt: "Use $sdet-exploratory-session-analyzer to turn a tester's session notes into useful findings and clear next steps."

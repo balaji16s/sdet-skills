@@ -73,7 +73,12 @@ For a test completion report, also include:
 
 ## Standards Basis
 
-This guide paraphrases monitoring, control, metrics, reporting, completion, coverage, risk, and defect guidance from ISTQB Certified Tester Foundation Level v4.0.1, Advanced Level Test Management v3.0, Advanced Level Test Automation Engineering v2.0, and Advanced Level Agile Tester v2.0.
+This guide uses the following ISTQB syllabus sections. Page numbers refer to the printed syllabus pages, not a viewer's page offset.
 
-ISTQB owns the referenced syllabi and trademarks. This guide is an independent, plain-language interpretation and does not imply ISTQB endorsement or accreditation.
+- Certified Tester Foundation Level v4.0.1, sections 5.3-5.3.3, pages 53-55: monitoring, control, metrics, audience-specific progress and completion reports.
+- Certified Tester Advanced Level Test Management v3.0, section 1.1.3, page 20: completion report, archiving, handover, and lessons learned.
+
+Examples, priority labels, output tables, and agent safety/authorization rules are original repository guidance, not mandatory ISTQB templates. These references support the testing concepts; they do not certify the skill or establish compliance with every standard cited by a syllabus.
+
+ISTQB owns the referenced syllabi and trademarks. This independent, plain-language interpretation does not imply ISTQB endorsement or accreditation.
 

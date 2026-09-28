@@ -102,12 +102,12 @@ List assumptions, evidence gaps, and events that require reassessment, such as a
 
 ## Standards Basis
 
-This guide paraphrases testing ideas from these ISTQB syllabi:
+This guide uses the following ISTQB syllabus sections. Page numbers refer to the printed syllabus pages, not a viewer's page offset.
 
-- Certified Tester Foundation Level Syllabus v4.0.1: product and project risks, risk identification, risk assessment, prioritization, risk control, and risk-based test effort.
-- Certified Tester Advanced Level Test Management Syllabus v3.0: quality risk identification, likelihood and impact assessment, risk mitigation, project test strategy, metrics, and review throughout the lifecycle.
-- Certified Tester Advanced Level Test Analyst Syllabus v4.0: product-risk analysis, risk control, and selection of test techniques based on the defects and risks being targeted.
-- Certified Tester Advanced Level Technical Test Analyst Syllabus v4.0: technical risk identification, assessment, mitigation, and risk-based selection of technical testing.
+- Certified Tester Foundation Level v4.0.1, sections 5.2-5.2.4, pages 51-53: product/project risks, likelihood and impact, risk analysis, and risk control.
+- Certified Tester Advanced Level Test Analyst v4.0, sections 2.1-2.2, pages 25-27: risk-focused testing, monitoring, and regression selection.
 
-ISTQB owns the referenced syllabi and trademarks. This guide is an independent, plain-language interpretation and does not imply ISTQB endorsement or accreditation.
+Examples, priority labels, output tables, and agent safety/authorization rules are original repository guidance, not mandatory ISTQB templates. These references support the testing concepts; they do not certify the skill or establish compliance with every standard cited by a syllabus.
+
+ISTQB owns the referenced syllabi and trademarks. This independent, plain-language interpretation does not imply ISTQB endorsement or accreditation.
 

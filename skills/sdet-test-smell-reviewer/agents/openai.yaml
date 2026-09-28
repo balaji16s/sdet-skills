@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Test Smell Reviewer"
+  short_description: "Find confusing and fragile manual test patterns"
+  default_prompt: "Use $sdet-test-smell-reviewer to find patterns that make manual tests hard to follow, trust, or maintain."

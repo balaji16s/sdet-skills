@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Performance Test Planner"
+  short_description: "Plan realistic load and performance measurements"
+  default_prompt: "Use $sdet-performance-test-planner to define a realistic workload and the measurements needed to assess speed and capacity."

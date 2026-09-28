@@ -1,6 +1,6 @@
 ---
 name: sdet-requirement-testability-review
-description: Review requirements, user stories, acceptance criteria, and related specifications for clarity, completeness, consistency, and testability before detailed test design. Use when a user wants to find gaps, ambiguities, contradictions, missing acceptance criteria, or testing risks in a test basis. Do not use for writing a full test plan or a complete set of executable test cases.
+description: Review requirements or mixed specifications for ambiguity, contradictions, omissions, and testability before test design. Use for a broad test-basis review; prefer user-story-testability-review for story refinement, acceptance wording, and slicing. Do not produce a full test plan or suite.
 ---
 
 # SDET Requirement Testability Review

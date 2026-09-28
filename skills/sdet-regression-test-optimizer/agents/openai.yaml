@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Regression Test Optimizer"
+  short_description: "Choose regression tests around change and risk"
+  default_prompt: "Use $sdet-regression-test-optimizer to help a team spend limited regression time on the checks most likely to matter."

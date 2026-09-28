@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Compatibility Portability Test Planner"
+  short_description: "Plan checks across environments and integrations"
+  default_prompt: "Use $sdet-compatibility-portability-test-planner to plan checks that software works in its intended environments and moves between them safely."

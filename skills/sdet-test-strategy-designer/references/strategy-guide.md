@@ -65,7 +65,14 @@ Define expected test deliverables, stored evidence, unresolved defects, known li
 
 ## Standards Basis
 
-This guide paraphrases ideas from ISTQB Certified Tester Foundation Level v4.0.1, Advanced Level Test Management v3.0, Advanced Level Test Analyst v4.0, Advanced Level Technical Test Analyst v4.0, Advanced Level Test Automation Engineering v2.0, and Advanced Level Agile Tester v2.0.
+This guide uses the following ISTQB syllabus sections. Page numbers refer to the printed syllabus pages, not a viewer's page offset.
 
-ISTQB owns the referenced syllabi and trademarks. This guide is an independent, plain-language interpretation and does not imply ISTQB endorsement or accreditation.
+- Certified Tester Foundation Level v4.0.1, sections 5.1.1-5.1.3, pages 48-49: objectives, scope, approach, resources, and entry/exit criteria; sections 5.2-5.3.3, pages 51-55: risk, control, and reporting.
+- Certified Tester Advanced Level Agile Tester v2.0, sections 3.1.1-3.1.2, pages 24-26: iteration/release planning and context-specific project test strategy.
+- Certified Tester Advanced Level Test Analyst v4.0, sections 1.3.3-1.3.5, pages 19-21: environments, expected-result sources, and data.
+- Certified Tester Advanced Level Test Management v3.0, section 1.1.3, page 20: completion and handover.
+
+Examples, priority labels, output tables, and agent safety/authorization rules are original repository guidance, not mandatory ISTQB templates. These references support the testing concepts; they do not certify the skill or establish compliance with every standard cited by a syllabus.
+
+ISTQB owns the referenced syllabi and trademarks. This independent, plain-language interpretation does not imply ISTQB endorsement or accreditation.
 

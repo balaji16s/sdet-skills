@@ -2,7 +2,7 @@
 
 Reusable AI agent skills for quality engineers, QA engineers, SDETs, developers, and test leaders.
 
-These skills help AI coding agents perform testing work with the structure and judgment of an experienced tester. The collection covers core activities of the Software Testing Life Cycle (STLC), from reviewing requirements to reporting test status, plus practical test automation engineering.
+These skills guide AI coding agents through practical quality-engineering work. The collection covers the Software Testing Life Cycle (STLC), from requirements and planning to completion and improvement, alongside automation, Agile and exploratory testing, and specialist technical testing.
 
 ## Who This Is For
 
@@ -16,11 +16,13 @@ This repository is useful for:
 
 ## Available Skills
 
-The collection covers core STLC work and test automation. Each skill has a focused purpose and can be installed independently.
+Each skill has a focused purpose and can be installed independently. The planned collection is now authored: 33 skills, including consolidated automation responsibilities rather than separate packages for every overlapping topic. This is a catalog milestone, not a claim that every skill has passed real-project evaluation.
+
+### Core STLC and Automation
 
 | Skill | What it does | Example use case |
 |---|---|---|
-| [`sdet-requirement-testability-review`](skills/sdet-requirement-testability-review/) | Finds unclear, incomplete, conflicting, or untestable requirements before detailed test design begins. | Review a user story and identify missing rules, vague acceptance criteria, and questions for the product owner. |
+| [`sdet-requirement-testability-review`](skills/sdet-requirement-testability-review/) | Finds unclear, incomplete, conflicting, or untestable requirements before detailed test design begins. | Compare a refund policy with an API specification and identify conflicting limits and missing rules. |
 | [`sdet-risk-based-test-planner`](skills/sdet-risk-based-test-planner/) | Identifies the most likely and harmful risks so testing focuses on what matters most. | Prioritize payment failures and data-loss risks above low-impact visual issues for a release. |
 | [`sdet-test-strategy-designer`](skills/sdet-test-strategy-designer/) | Creates a practical testing approach covering objectives, scope, risks, test types, environments, people, automation, and reporting. | Define how a team will test a new checkout service across component, API, integration, system, and acceptance levels. |
 | [`sdet-test-technique-designer`](skills/sdet-test-technique-designer/) | Selects and applies suitable test techniques to derive effective and traceable tests. | Use equivalence partitions and boundary values to test an age field, or a decision table to test discount rules. |
@@ -38,6 +40,26 @@ The collection covers core STLC work and test automation. Each skill has a focus
 | [`sdet-test-automation-engineer`](skills/sdet-test-automation-engineer/) | Builds and maintains automated tests using the project's existing framework, with meaningful assertions and reliable setup and cleanup. | Add API and UI checkout tests that verify order outcomes and isolate test data. |
 | [`sdet-automation-framework-reviewer`](skills/sdet-automation-framework-reviewer/) | Reviews shared automation code and architecture for reliability, trustworthy results, and maintainability. | Find a shared assertion helper that hides failures or a fixture that mixes data between parallel tests. |
 | [`sdet-ci-cd-test-integrator`](skills/sdet-ci-cd-test-integrator/) | Integrates test suites into CI/CD with suitable triggers, preserved failure evidence, and clear gate behavior. | Add required regression checks that retain reports without turning failed tests into a successful job. |
+
+### Agile, Exploratory, and Technical Testing
+
+| Skill | What it does | Example use case |
+|---|---|---|
+| [`sdet-agile-quality-coach`](skills/sdet-agile-quality-coach/) | Helps teams include quality checks throughout their everyday Agile work. | Introduce early refund-rule discussions to reduce late clarification. |
+| [`sdet-user-story-testability-review`](skills/sdet-user-story-testability-review/) | Checks whether a user story is clear and small enough to test. | Clarify cancellation rules and split an oversized order story. |
+| [`sdet-example-mapping-facilitator`](skills/sdet-example-mapping-facilitator/) | Turns a story into business rules, examples, and unanswered questions. | Agree how discounts apply at a price threshold. |
+| [`sdet-exploratory-test-charter-designer`](skills/sdet-exploratory-test-charter-designer/) | Creates a focused mission for a tester to explore. | Investigate what happens to a cart when a session expires. |
+| [`sdet-exploratory-session-analyzer`](skills/sdet-exploratory-session-analyzer/) | Summarizes what an exploratory session actually discovered. | Turn checkout notes into suspected defects and follow-up investigations. |
+| [`sdet-test-smell-reviewer`](skills/sdet-test-smell-reviewer/) | Finds confusing or fragile patterns in manual test instructions. | Replace vague expected results and expose hidden setup dependencies. |
+| [`sdet-regression-test-optimizer`](skills/sdet-regression-test-optimizer/) | Selects valuable regression checks for a change and available time. | Prioritize tax, refund, and invoice tests after a tax-rule change. |
+| [`sdet-white-box-test-designer`](skills/sdet-white-box-test-designer/) | Designs tests to exercise specific decisions and paths in code. | Show which input pairs demonstrate each Boolean condition's effect. |
+| [`sdet-api-test-designer`](skills/sdet-api-test-designer/) | Defines API scenarios, expected responses, and business-state checks. | Check duplicate order requests against the documented retry contract. |
+| [`sdet-static-analysis-reviewer`](skills/sdet-static-analysis-reviewer/) | Reviews code-analysis warnings and separates evidence from suspicion. | Check whether a reported null access is reachable. |
+| [`sdet-security-test-planner`](skills/sdet-security-test-planner/) | Plans safe, authorized checks for important security risks. | Plan checks that one tenant cannot read another tenant's invoices. |
+| [`sdet-performance-test-planner`](skills/sdet-performance-test-planner/) | Plans realistic workloads and meaningful speed/capacity checks. | Define a promotion-load test with agreed targets and stop limits. |
+| [`sdet-reliability-test-planner`](skills/sdet-reliability-test-planner/) | Plans checks for failure tolerance, backup restoration, and recovery. | Verify recovery from a worker restart without lost or duplicate orders. |
+| [`sdet-compatibility-portability-test-planner`](skills/sdet-compatibility-portability-test-planner/) | Plans checks across supported platforms, integrations, and upgrades. | Assess a driver upgrade across supported database versions. |
+| [`sdet-technical-review-facilitator`](skills/sdet-technical-review-facilitator/) | Organizes focused technical reviews with evidence and follow-up actions. | Review a design for stale permission-cache risks. |
 
 ## How the Skills Fit Together
 
@@ -72,6 +94,16 @@ The skills are independent. Install only the skill you need, or combine them acr
 
 For automation work, use feasibility assessment to decide what to automate, automation engineering to implement it, framework review to assess shared infrastructure, and CI/CD integration to run it in delivery workflows. The existing execution analyst investigates run failures; the test-case reviewer evaluates individual cases and their coverage. Tool evaluation and architecture are included in the automation skills rather than requiring separate packages.
 
+For Agile work, use the coach for team practices, story review for refinement, and example mapping for business-rule discussions. A charter plans an exploratory session; session analysis uses its recorded evidence. Smell review focuses on manual-test maintainability, while regression optimization selects checks for a specific change.
+
+For technical work, use API and white-box design for detailed coverage, static analysis for code warnings, and technical review for broader design or code discussions. Security, performance, reliability, and compatibility/portability skills create bounded plans; they do not authorize scans, load generation, fault injection, or migrations.
+
+## Validation and Limitations
+
+Structural checks cover skill format, naming, metadata, and local links. They do not prove that an AI agent will reliably choose or follow a skill.
+
+Behavioral evaluation scenarios cover [core STLC and automation](evals/core-and-automation-skills.md) and [specialist skills](evals/specialist-skills.md), including missing evidence, coverage calculations, authorization limits, and skill selection. These are test cases, not a claim that the full collection has passed. Before relying on a skill for release decisions, evaluate it with representative project inputs and review its output with a qualified person. No cross-agent or production-readiness guarantee is made.
+
 ## Skill Structure
 
 Each skill is self-contained:
@@ -99,6 +131,8 @@ The skills are informed by testing concepts from the following ISTQB syllabi:
 - Certified Tester Advanced Level Agile Tester v2.0
 
 The repository uses original, plain-language guidance rather than copying the syllabi. ISTQB owns its syllabi and trademarks. This is an independent community project and is not affiliated with, accredited by, or endorsed by ISTQB.
+
+Each supporting guide identifies its source syllabus and relevant sections; the original MVP guides also identify printed page numbers. Examples, templates, and agent safety conventions are repository guidance, not mandatory ISTQB rules. Describe the collection as **ISTQB syllabus-informed**, not ISTQB-certified or a guarantee of compliance with other standards mentioned in a syllabus. The source PDFs are not required to use an installed skill.
 
 ## Installation
 
@@ -149,8 +183,8 @@ Contributions from testers, developers, quality engineers, and test leaders are 
 
 Prefix every skill's folder and frontmatter name with `sdet-` (for example, `sdet-test-data-designer`). Use `SDET` at the start of its display name and keep invocation prompts consistent with the full skill name.
 
-When adding a skill, update the **Available Skills** table in this README so the public catalog remains current.
+When adding or changing a skill, update the **Available Skills** tables, its metadata, and relevant evaluation scenarios so the public catalog remains current. Keep scope boundaries explicit and distinguish structural validation from observed agent behavior.
 
 ## License
 
-The project is intended to be free to use, adapt, and build upon for quality-engineering workflows. Add a repository license file before the first public release so these permissions are legally explicit.
+This project's original skill content and documentation are licensed under the [MIT License](LICENSE). Referenced ISTQB syllabi and trademarks remain the property of their respective owners and are not relicensed by this project.

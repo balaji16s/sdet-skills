@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Reliability Test Planner"
+  short_description: "Plan failure recovery and reliable operation checks"
+  default_prompt: "Use $sdet-reliability-test-planner to plan how to check that a service keeps working or recovers correctly when something fails."

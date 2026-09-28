@@ -1,6 +1,6 @@
 ---
 name: sdet-test-case-quality-reviewer
-description: Review existing manual or automated test cases for correctness, clarity, necessity, feasibility, traceability, coverage, expected results, data, and maintainability. Use when a user wants feedback on test cases or a test suite and actionable improvements. Do not use to design a complete new test suite from requirements.
+description: Review existing manual or automated cases and suites for correctness, coverage, traceability, and usability. Use for a broad test-case quality review; prefer test-smell-reviewer for a focused manual-procedure smell audit and automation-framework-reviewer for shared infrastructure.
 ---
 
 # SDET Test Case Quality Reviewer

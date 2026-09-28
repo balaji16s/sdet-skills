@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET API Test Designer"
+  short_description: "Design API coverage from contracts and risks"
+  default_prompt: "Use $sdet-api-test-designer to specify what to check at an API boundary and how to judge the result."

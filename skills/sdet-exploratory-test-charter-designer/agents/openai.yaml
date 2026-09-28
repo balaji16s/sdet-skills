@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDET Exploratory Test Charter Designer"
+  short_description: "Give exploratory testing a focused mission"
+  default_prompt: "Use $sdet-exploratory-test-charter-designer to give a tester a clear question to investigate while leaving room to learn and adapt."

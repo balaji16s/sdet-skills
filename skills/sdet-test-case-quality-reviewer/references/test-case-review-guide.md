@@ -56,7 +56,13 @@ List important missing or over-represented coverage, unknown test oracles, trace
 
 ## Standards Basis
 
-This guide paraphrases test-case and testware quality guidance from ISTQB Certified Tester Foundation Level v4.0.1, Advanced Level Test Analyst v4.0, Advanced Level Test Automation Engineering v2.0, and Advanced Level Agile Tester v2.0.
+This guide uses the following ISTQB syllabus sections. Page numbers refer to the printed syllabus pages, not a viewer's page offset.
 
-ISTQB owns the referenced syllabi and trademarks. This guide is an independent, plain-language interpretation and does not imply ISTQB endorsement or accreditation.
+- Certified Tester Advanced Level Test Analyst v4.0, section 1.3.2, page 18: test-case quality criteria and context-dependent detail.
+- Certified Tester Advanced Level Test Automation Engineering v2.0, sections 7.1.2-7.1.4, pages 45-46, and section 8.1.2, pages 48-51: suite verification, unexpected results, assertions, and maintainability.
+- Certified Tester Advanced Level Agile Tester v2.0, section 5.3, pages 45-47: manual-test smells.
+
+Examples, priority labels, output tables, and agent safety/authorization rules are original repository guidance, not mandatory ISTQB templates. These references support the testing concepts; they do not certify the skill or establish compliance with every standard cited by a syllabus.
+
+ISTQB owns the referenced syllabi and trademarks. This independent, plain-language interpretation does not imply ISTQB endorsement or accreditation.
 

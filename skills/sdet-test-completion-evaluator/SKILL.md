@@ -1,6 +1,6 @@
 ---
 name: sdet-test-completion-evaluator
-description: Assess whether testing for a milestone meets agreed objectives and exit criteria, and identify unresolved risks and handover work. Use for evidence-based test closure or completion readiness assessments. Focus on evaluating completion rather than writing a routine status report or authorizing release.
+description: Assess whether milestone testing meets agreed objectives and exit criteria, with an evidence-based met, unmet, or unverified decision for each criterion. Use for completion readiness and handover gaps; use test-status-reporter when the main request is to communicate a status or completion report.
 ---
 
 # SDET Test Completion Evaluator

@@ -67,7 +67,12 @@ List items affected by change, questionable links, missing data, inconsistent id
 
 ## Standards Basis
 
-This guide paraphrases traceability, coverage, monitoring, risk, testware, and defect-management guidance from ISTQB Certified Tester Foundation Level v4.0.1, Advanced Level Test Management v3.0, Advanced Level Test Analyst v4.0, and Advanced Level Agile Tester v2.0.
+This guide uses the following ISTQB syllabus sections. Page numbers refer to the printed syllabus pages, not a viewer's page offset.
 
-ISTQB owns the referenced syllabi and trademarks. This guide is an independent, plain-language interpretation and does not imply ISTQB endorsement or accreditation.
+- Certified Tester Foundation Level v4.0.1, sections 1.4.3-1.4.4, pages 20-21: testware and traceability; sections 5.3.1-5.3.2, pages 54-55: coverage metrics and reporting; section 5.4, page 56: configuration and version control.
+- Certified Tester Advanced Level Test Analyst v4.0, sections 1.2.1-1.2.2, page 15: linking the test basis, test conditions, and test cases; section 2.2, pages 26-27: change impact and regression selection.
+
+Examples, priority labels, output tables, and agent safety/authorization rules are original repository guidance, not mandatory ISTQB templates. These references support the testing concepts; they do not certify the skill or establish compliance with every standard cited by a syllabus.
+
+ISTQB owns the referenced syllabi and trademarks. This independent, plain-language interpretation does not imply ISTQB endorsement or accreditation.
 

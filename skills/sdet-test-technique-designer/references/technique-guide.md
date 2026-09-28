@@ -10,7 +10,21 @@ Use when values or objects can be grouped so members of a group should behave th
 
 ### Boundary Value Analysis
 
-Use when behavior changes at limits, ranges, counts, sizes, dates, timeouts, or ordered values. Test the boundary values and the closest meaningful values on either side. State whether two-value or three-value coverage is being used.
+Use for ordered equivalence partitions with defined limits. Identify the valid and invalid partitions first, then their boundary values. Define the smallest meaningful increment, such as one integer or one cent; do not assume every numeric input has integer neighbors.
+
+- **Two-value BVA:** For each boundary value, select that value and its nearest neighbor in the adjacent partition.
+- **Three-value BVA:** For each boundary value, select that value and both immediate neighbors, where they exist in the input domain.
+
+Example: integers 1 through 5 are accepted; integers at most 0 and at least 6 are rejected. The partition boundary values are 0, 1, 5, and 6. After removing repeated values:
+
+| Criterion | Designed inputs | Distinct coverage items |
+|---|---|---|
+| Two-value | 0, 1, 5, 6 | 4 |
+| Three-value | -1, 0, 1, 2, 4, 5, 6, 7 | 8 |
+
+The three-value set includes neighbors of the invalid partitions' boundaries as well as the valid range's endpoints. A six-value endpoint-only set omits -1 and 7 under this model. State any narrower model explicitly. Representation limits and other input types require separate consideration.
+
+These sets demonstrate complete design coverage of the stated items, not measured execution coverage. Expected rejection wording remains unknown unless supplied.
 
 ### Decision Table Testing
 
@@ -26,7 +40,7 @@ Use for end-to-end user or system workflows. Cover the main flow and important a
 
 ### Structural Testing
 
-Use when code, control flow, API structure, or another internal structure is available and the objective requires it. Possible goals include statement, branch, condition, or path coverage. State the exact coverage target and its limitations.
+Use when source code or a control-flow model is available and internal coverage is part of a combined design objective. Define the exact statement, branch, or decision items and distinguish predicted coverage from measured execution. API testing alone does not imply structural coverage. For a dedicated structural-coverage request, prefer the white-box skill when available; no other package is required for behavior-focused design here. Basis-path testing is not taught in TTA v4.0: its section 2.6 was removed.
 
 ### Experience-Based Testing
 
@@ -74,11 +88,17 @@ Use stable identifiers. If an expected result is unknown, say so and ask a direc
 
 ### 4. Coverage and Gaps
 
-State which partitions, boundaries, rules, states, transitions, paths, risks, or scenarios are covered. List excluded or impossible items, assumptions, duplicate reduction, and remaining gaps.
+State which partitions, boundaries, rules, states, transitions, risks, or scenarios the design targets, with a named numerator and denominator where useful. Distinguish designed, executed, and passed coverage. Without run evidence, measured execution coverage is unknown. List excluded or impossible items, assumptions, duplicate reduction, and remaining gaps.
 
 ## Standards Basis
 
-This guide paraphrases test-design guidance from ISTQB Certified Tester Foundation Level v4.0.1, Advanced Level Test Analyst v4.0, Advanced Level Technical Test Analyst v4.0, and Advanced Level Agile Tester v2.0.
+This guide uses the following ISTQB syllabus sections. Page numbers refer to the printed syllabus pages, not a viewer's page offset.
 
-ISTQB owns the referenced syllabi and trademarks. This guide is an independent, plain-language interpretation and does not imply ISTQB endorsement or accreditation.
+- Certified Tester Foundation Level v4.0.1, sections 4.2.1-4.2.4, pages 39-42: partitions, two-value/three-value boundaries, decision tables, and transitions; sections 4.3-4.4.3, pages 42-44: structural and experience-based techniques.
+- Certified Tester Advanced Level Test Analyst v4.0, sections 3.1-3.3.2, pages 29-36, and section 3.5.1, page 40: domain, combinatorial, random, CRUD, scenario, metamorphic testing, and risk-based technique selection.
+- Certified Tester Advanced Level Technical Test Analyst v4.0, sections 2.1-2.5, pages 14-16, and sections 2.6-2.7, pages 17-18: structural coverage, the removal of basis-path testing, and API testing's coverage limitations.
+
+Examples, priority labels, output tables, and agent safety/authorization rules are original repository guidance, not mandatory ISTQB templates. These references support the testing concepts; they do not certify the skill or establish compliance with every standard cited by a syllabus.
+
+ISTQB owns the referenced syllabi and trademarks. This independent, plain-language interpretation does not imply ISTQB endorsement or accreditation.
 

@@ -1,6 +1,6 @@
 ---
 name: sdet-test-technique-designer
-description: Select and apply suitable test design techniques to turn requirements, risks, models, or code into traceable test conditions and cases with clear coverage. Use for equivalence partitions, boundaries, decision tables, state transitions, scenarios, structural coverage, exploratory ideas, or combined technique design. Do not use to create the overall test strategy or merely review existing cases.
+description: Derive tests from requirements or behavior models using partitions, boundaries, decision tables, state transitions, and combined techniques. Use for behavior-focused test design; use white-box-test-designer for a specific code-coverage target and exploratory-test-charter-designer for a session mission.
 ---
 
 # SDET Test Technique Designer
@@ -21,7 +21,7 @@ Read [references/technique-guide.md](references/technique-guide.md) before selec
 4. Derive the smallest useful set of test conditions or cases that achieves the intended coverage.
 5. Include meaningful positive, negative, boundary, and error behavior where supported by the source.
 6. Link each test to its source, risk, model element, or coverage goal.
-7. State coverage achieved, gaps, assumptions, duplicates removed, and questions that block reliable expected results.
+7. State planned design coverage, gaps, assumptions, duplicates removed, and questions that block reliable expected results. Report measured execution coverage only when run evidence is supplied.
 
 ## Working Rules
 
@@ -33,7 +33,7 @@ Read [references/technique-guide.md](references/technique-guide.md) before selec
 - Do not invent expected results, hidden business rules, or code behavior.
 - Separate test conditions from detailed test cases when the user has not asked for execution steps.
 - Avoid duplicate tests unless repetition serves a stated platform, data, reliability, or regression purpose.
-- For structural techniques, calculate coverage only from the actual structure supplied.
+- Define coverage items and their denominator. A proposed test targeting an item is not evidence that the item was executed or passed.
 - Testing reduces uncertainty; it does not prove that no other defect exists.
 
 ## Expected Result
